@@ -7,13 +7,13 @@ import os
 import gdown
 
 model_path = './savedModels/plant_deficiency_model.h5'
-file_id = '1v-P2KD916TAevWcQHrOUeNm4KzhSnuZp'
-url = f'https://drive.google.com/uc?id={file_id}'
+# file_id = '1v-P2KD916TAevWcQHrOUeNm4KzhSnuZp'
+# url = f'https://drive.google.com/uc?id={file_id}'
 
 
-if not os.path.exists(model_path):
-    os.makedirs(os.path.dirname(model_path), exist_ok=True)
-    gdown.download(url, model_path, quiet=False, fuzzy=True)
+# if not os.path.exists(model_path):
+#     os.makedirs(os.path.dirname(model_path), exist_ok=True)
+#     gdown.download(url, model_path, quiet=False, fuzzy=True)
 
 model = load_model(model_path)
 
